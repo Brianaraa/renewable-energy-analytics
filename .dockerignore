@@ -1,0 +1,27 @@
+# Git
+.git
+.gitignore
+
+# Environments
+venv/
+env/
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Data (we want to mount raw data, and not copy processed cache)
+data/processed/
+# Allow data/raw/ to be mounted, don't copy local CSVs to save space if needed
+# data/raw/*.csv
+
+# Tests
+tests/
+
+# Jupyter
+.ipynb_checkpoints
+notebooks/
